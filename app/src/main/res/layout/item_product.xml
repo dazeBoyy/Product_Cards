@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="8dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter" />
+
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Текст с ценой -->
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Цена товара"
+            android:textColor="@color/black"
+            android:layout_marginEnd="8dp" /> <!-- Отступ от текста к картинке -->
+
+        <!-- Картинка справа от цены -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="23dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="24dp"
+            app:srcCompat="@drawable/basket" />
+    </LinearLayout>
+</LinearLayout>
